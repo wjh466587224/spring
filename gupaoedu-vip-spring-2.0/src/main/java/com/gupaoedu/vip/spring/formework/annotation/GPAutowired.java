@@ -9,6 +9,7 @@ import java.lang.annotation.Target;
 
 /**
  * 自动注入
+ * @author Tom
  *
  */
 @Target({ElementType.FIELD})

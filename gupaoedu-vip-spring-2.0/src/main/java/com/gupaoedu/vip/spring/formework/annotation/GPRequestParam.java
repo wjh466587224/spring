@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * 请求参数映射
+ * @author Tom
  *
  */
 @Target(ElementType.PARAMETER)

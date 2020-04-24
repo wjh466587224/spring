@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * 请求url
+ * @author Tom
  *
  */
 @Target({ElementType.METHOD,ElementType.TYPE})

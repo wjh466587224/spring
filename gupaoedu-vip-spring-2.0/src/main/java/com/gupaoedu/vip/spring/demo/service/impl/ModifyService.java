@@ -5,6 +5,7 @@ import com.gupaoedu.vip.spring.formework.annotation.GPService;
 
 /**
  * 增删改业务
+ * @author Tom
  *
  */
 @GPService
@@ -13,8 +14,9 @@ public class ModifyService implements IModifyService {
 	/**
 	 * 增加
 	 */
-	public String add(String name,String addr) {
-		return "modifyService add,name=" + name + ",addr=" + addr;
+	public String add(String name,String addr) throws Exception {
+		throw new Exception("这是Tom老师故意抛的异常！！");
+		//return "modifyService add,name=" + name + ",addr=" + addr;
 	}
 
 	/**

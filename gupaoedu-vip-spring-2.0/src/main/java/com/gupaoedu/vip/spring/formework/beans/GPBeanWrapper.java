@@ -1,17 +1,24 @@
 package com.gupaoedu.vip.spring.formework.beans;
 
-import lombok.Data;
-
-@Data
+/**
+ * Created by Tom.
+ */
 public class GPBeanWrapper {
 
-    public Object getWrappedIntance(){
+    private Object wrappedInstance;
+    private Class<?> wrappedClass;
 
-        return null;
-
+    public GPBeanWrapper(Object wrappedInstance){
+        this.wrappedInstance = wrappedInstance;
     }
 
-    public Class<?> getWrapperClass(){
-        return null;
+    public Object getWrappedInstance(){
+        return this.wrappedInstance;
+    }
+
+    // 返回代理以后的Class
+    // 可能会是这个 $Proxy0
+    public Class<?> getWrappedClass(){
+        return this.wrappedInstance.getClass();
     }
 }

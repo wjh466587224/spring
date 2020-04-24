@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * 业务逻辑,注入接口
+ * @author Tom
  *
  */
 @Target({ElementType.TYPE})

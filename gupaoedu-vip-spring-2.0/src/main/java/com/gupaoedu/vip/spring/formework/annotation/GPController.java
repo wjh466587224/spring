@@ -8,6 +8,7 @@ import java.lang.annotation.Target;
 
 /**
  * 页面交互
+ * @author Tom
  *
  */
 @Target({ElementType.TYPE})

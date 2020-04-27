@@ -32,7 +32,7 @@ public class GPJdkDynamicAopProxy implements GPAopProxy, InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         List<Object> list = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, this.advised.getTargetClass());
 
-        GPMethodInvocation gpMethodInvocation = new GPMethodInvocation(proxy, null, method, args, this.advised.getTargetClass(),list);
+        GPMethodInvocation gpMethodInvocation = new GPMethodInvocation(proxy, this.advised.getTarget(), method, args, this.advised.getTargetClass(),list);
 
 
         return gpMethodInvocation.proceed();

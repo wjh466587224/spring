@@ -17,9 +17,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by Tom on 2019/4/13.
- */
 @Slf4j
 public class GPDispatcherServlet extends HttpServlet {
     private final String CONTEXT_CONFIG_LOCATION = "contextConfigLocation";
